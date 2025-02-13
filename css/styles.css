@@ -9,6 +9,7 @@ body {
     background-color: #fff;
     color: #333
 }
+
 /* Header */
 header {
     display: flex;
@@ -56,7 +57,28 @@ nav ul li a:hover {
     color: #e44d26;
 }
 
-/*Hero section*/
+/* Hero Section */
+.hero {
+    position: relative;
+    text-align: center;
+}
+
+.hero img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+}
 
 /*About Section*/
 

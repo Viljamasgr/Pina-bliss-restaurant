@@ -71,11 +71,13 @@ nav ul li a:hover {
 .hero {
     position: relative;
     text-align: center;
+    height: 400px; /* Increased height for a more impactful display */
+    overflow: hidden; /* Ensures no overflow of content */
 }
 
 .hero img {
     width: 100%;
-    height: 300px;
+    height: 100%;
     object-fit: cover;
 }
 
@@ -84,24 +86,91 @@ nav ul li a:hover {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.5); /* Slightly transparent background */
     color: white;
-    padding: 20px;
-    border-radius: 8px;
+    padding: 30px 40px;
+    border-radius: 12px;
+    max-width: 80%; /* Limits width of text for better readability */
 }
+
+.hero h1 {
+    font-size: 3rem;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.hero p {
+    font-size: 1.25rem;
+    margin-top: 10px;
+    font-family: 'Arial', sans-serif;
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+.hero-text:hover {
+    background: rgba(0, 0, 0, 0.7); /* Darken background on hover */
+    transition: background 0.3s ease;
+}
+
 
 /* About */
 .about {
     text-align: center;
-    padding: 50px;
-    background: #f4f4f4;
+    padding: 60px 20px;
+    background: #eee;
     margin: 10px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    max-width: 900px; /* Restrict width to prevent text from spreading too much */
 }
 
+.about h2 {
+    font-size: 2.5rem;
+    color: #222;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.about p {
+    font-size: 1.125rem;
+    line-height: 1.6;
+    color: black;
+    font-family: 'Arial', sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding-top: 15px;
+}
+
+
 /* Menu */
+/* Menu Preview Section */
 .menu-preview {
     text-align: center;
-    padding: 30px;
+    padding: 80px 20px;
+    background: #f8f8f8; /* Light background to keep it neutral */
+}
+
+/* Signature Dishes Title */
+.menu-title {
+    font-family: 'Playfair Display', serif; /* Elegant serif font */
+    font-size: 3.5rem; /* Larger font size for sophistication */
+    font-weight: 600; /* Bold but not too overpowering */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #222; /* Rich, dark color for the title */
+    position: relative;
+    display: inline-block;
+    padding: 15px 40px;
+    background-color: transparent;
+    border: 3px solid #d4af37; /* Gold border to elevate the title */
+    border-radius: 50px; /* Rounded, luxurious border */
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15); /* Deep shadow for sophistication */
+    margin-bottom: 40px; /* Spacing below the title */
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
 }
 
 .menu-items {
@@ -116,6 +185,7 @@ nav ul li a:hover {
     border-radius: 5px;
     font-size: 18px;
     transition: 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 .menu-item img {

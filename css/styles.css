@@ -19,10 +19,9 @@ header {
     color: white;
     position: sticky;
     top: 0;
-    z-index: 1000; /* Ensures the header stays above other content */
-    width: 100%; /* Ensures the header spans the full width */
+    z-index: 1000;
+    width: 100%;
 }
-
 
 /* Content container inside the header */
 .header-content {
@@ -36,6 +35,7 @@ header {
     flex: 1;
 }
 
+/*Logo image in the header*/
 .logo-container img {
     width: 200px;
     float: left;
@@ -47,6 +47,7 @@ nav {
     text-align: right;
 }
 
+/*Navigation List*/
 nav ul {
     margin-top: 15px;
     list-style: none;
@@ -55,44 +56,49 @@ nav ul {
     gap: 20px;
 }
 
+/*Navigation List Item*/
 nav ul li a {
     color: white;
     text-decoration: none;
     transition: 0.3s;
 }
 
+/*Navigation List Item Hover Effect*/
 nav ul li a:hover {
     text-decoration: underline;
     color: #ffffff;
 }
 
-
 /* Hero */
 .hero {
     position: relative;
     text-align: center;
-    height: 400px; /* Increased height for a more impactful display */
-    overflow: hidden; /* Ensures no overflow of content */
+    height: 400px;
+    overflow: hidden;
+    margin-bottom: 10px;
 }
 
+/*Hero Image*/
 .hero img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
+/*Hero Text*/
 .hero-text {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: rgba(0, 0, 0, 0.5); /* Slightly transparent background */
+    background: rgba(0, 0, 0, 0.5);
     color: white;
     padding: 30px 40px;
     border-radius: 12px;
-    max-width: 80%; /* Limits width of text for better readability */
+    max-width: 80%;
 }
 
+/*Hero Title*/
 .hero h1 {
     font-size: 3rem;
     margin: 0;
@@ -101,6 +107,7 @@ nav ul li a:hover {
     letter-spacing: 3px;
 }
 
+/*Hero Smaller Text*/
 .hero p {
     font-size: 1.25rem;
     margin-top: 10px;
@@ -109,11 +116,11 @@ nav ul li a:hover {
     line-height: 1.5;
 }
 
+/*Hero Text Hover Effect*/
 .hero-text:hover {
-    background: rgba(0, 0, 0, 0.7); /* Darken background on hover */
+    background: rgba(0, 0, 0, 0.7);
     transition: background 0.3s ease;
 }
-
 
 /* About */
 .about {
@@ -124,9 +131,10 @@ nav ul li a:hover {
     margin: 10px auto;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    max-width: 900px; /* Restrict width to prevent text from spreading too much */
+    max-width: 900px;
 }
 
+/* About Title */
 .about h2 {
     font-size: 2.5rem;
     color: #222;
@@ -136,6 +144,7 @@ nav ul li a:hover {
     letter-spacing: 2px;
 }
 
+/* About Text */
 .about p {
     font-size: 1.125rem;
     line-height: 1.6;
@@ -146,40 +155,42 @@ nav ul li a:hover {
     padding-top: 15px;
 }
 
-
 /* Menu */
 /* Menu Preview Section */
 .menu-preview {
+    margin-top: -50px;
     text-align: center;
     padding: 80px 20px;
-    background: #ffffff; /* Light background to keep it neutral */
+    background: #ffffff;
 }
 
 /* Signature Dishes Title */
 .menu-title {
-    font-family: 'Playfair Display', serif; /* Elegant serif font */
-    font-size: 3.5rem; /* Larger font size for sophistication */
-    font-weight: 600; /* Bold but not too overpowering */
-    text-transform: uppercase;
+    font-family: 'Playfair Display', serif; 
+    font-size: 3.5rem;
+    font-weight: 600; 
+    text-transform: uppercase; 
     letter-spacing: 2px;
-    color: #222; /* Rich, dark color for the title */
-    position: relative;
+    color: #222; 
+    position: relative; 
     display: inline-block;
-    padding: 15px 40px;
+    padding: 15px 40px; 
     background-color: transparent;
-    border: 3px solid #d4af37; /* Gold border to elevate the title */
-    border-radius: 50px; /* Rounded, luxurious border */
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15); /* Deep shadow for sophistication */
-    margin-bottom: 40px; /* Spacing below the title */
-    transition: all 0.3s ease; /* Smooth transition for hover effect */
+    border: 3px solid #d4af37; 
+    border-radius: 50px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+    margin-bottom: 40px;
+    transition: all 0.3s ease;
 }
 
+/* Menu Cards Display */
 .menu-items {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 15px;
 }
 
+/* Menu Item specifically */
 .menu-item {
     font-family: 'Playfair Display', serif;
     background: #eee;
@@ -191,6 +202,7 @@ nav ul li a:hover {
     border: 3px solid #d4af37;
 }
 
+/* Menu item image(food picture) */
 .menu-item img {
     margin-bottom: 10px;
     width: 100%;
@@ -205,33 +217,120 @@ nav ul li a:hover {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
 }
 
+/*Menu spacing from top item*/
+.menu-preview {
+    padding-bottom: 20px;
+    margin-bottom: 10px;
+}
+
+/* Reservation Section */
+.reservation {
+    border: 3px solid #d4af37;
+    text-align: center;
+    background: #eee;
+    padding: 60px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    max-width: 700px;
+    margin: 40px auto;
+    font-family: 'Playfair Display', serif;
+}
+
+/* Reservation Title */
+.reservation-title {
+    font-size: 2.5rem;
+    color: #222;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+/* Reservation Text */
+.reservation-text {
+    font-size: 1.2rem;
+    color: black;
+    margin-bottom: 20px;
+}
+
+/* Reservation Form */
+.reservation-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Form Group */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Form Group Label */
+.form-group label {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Form Group Input */
+.form-group input {
+    width: 80%;
+    padding: 10px;
+    border: 2px solid #d4af37;
+    border-radius: 5px;
+    font-size: 1rem;
+    text-align: center;
+}
+
+/*Reservation Button*/
+.reserve-btn {
+    background-color: #d4af37;
+    color: white;
+    padding: 12px 20px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-family: 'Playfair Display', serif;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/*Reservation Button Hover Effect*/
+.reserve-btn:hover {
+    background-color: #b28f2e;
+    transform: scale(1.05);
+}
+
+
 /* Footer */
 .footer-basic {
     padding:40px 0;
     background-color:#222;
     color:#ffffff;
   }
-  
-  .footer-basic ul {
+
+.footer-basic ul {
     padding:0;
     list-style:none;
     text-align:center;
     font-size:18px;
     line-height:1.6;
     margin-bottom:0;
-  }
+}
   
-  .footer-basic li {
+.footer-basic li {
     padding:0 10px;
-  }
+}
   
-  .footer-basic ul a {
+.footer-basic ul a {
     color:inherit;
     text-decoration:none;
     opacity:0.8;
-  }
+}
   
-  .footer-basic ul a:hover {
+.footer-basic ul a:hover {
     opacity:1;
     text-decoration: underline;
   }

@@ -14,31 +14,44 @@ body {
 
 /* Header */
 header {
+    background-color: #222;
+    padding: 10px;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Ensures the header stays above other content */
+    width: 100%; /* Ensures the header spans the full width */
+}
+
+
+/* Content container inside the header */
+.header-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
-    background-color: #222;
-    color: white;
 }
 
+/* Logo */
 .logo-container {
-    display: flex;
-    align-items: center;
+    flex: 1;
 }
 
 .logo-container img {
-    width: 70px;
+    width: 200px;
+    float: left;
 }
 
-.restaurant-name {
-    font-size: 24px;
-    font-weight: bold;
+/* Navigation */
+nav {
+    flex: 1;
+    text-align: right;
 }
 
 nav ul {
+    margin-top: 15px;
     list-style: none;
     display: flex;
+    justify-content: flex-end;
     gap: 20px;
 }
 
@@ -52,6 +65,7 @@ nav ul li a:hover {
     text-decoration: underline;
     color: #ffffff;
 }
+
 
 /* Hero */
 .hero {

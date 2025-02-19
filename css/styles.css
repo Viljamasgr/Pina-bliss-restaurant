@@ -96,7 +96,7 @@ nav ul li a:hover {
 .hero h1 {
     font-size: 3rem;
     margin: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Playfair Display', serif;
     text-transform: uppercase;
     letter-spacing: 3px;
 }
@@ -104,7 +104,7 @@ nav ul li a:hover {
 .hero p {
     font-size: 1.25rem;
     margin-top: 10px;
-    font-family: 'Arial', sans-serif;
+    font-family: 'Playfair Display', serif;
     font-weight: 300;
     line-height: 1.5;
 }
@@ -117,6 +117,7 @@ nav ul li a:hover {
 
 /* About */
 .about {
+    font-family: 'Playfair Display', serif;
     text-align: center;
     padding: 60px 20px;
     background: #eee;
@@ -129,7 +130,7 @@ nav ul li a:hover {
 .about h2 {
     font-size: 2.5rem;
     color: #222;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Playfair Display', serif;
     margin-bottom: 20px;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -139,7 +140,7 @@ nav ul li a:hover {
     font-size: 1.125rem;
     line-height: 1.6;
     color: black;
-    font-family: 'Arial', sans-serif;
+    font-family: 'Playfair Display', serif;
     max-width: 800px;
     margin: 0 auto;
     padding-top: 15px;
@@ -151,7 +152,7 @@ nav ul li a:hover {
 .menu-preview {
     text-align: center;
     padding: 80px 20px;
-    background: #f8f8f8; /* Light background to keep it neutral */
+    background: #ffffff; /* Light background to keep it neutral */
 }
 
 /* Signature Dishes Title */
@@ -180,19 +181,28 @@ nav ul li a:hover {
 }
 
 .menu-item {
+    font-family: 'Playfair Display', serif;
     background: #eee;
     padding: 15px;
     border-radius: 5px;
     font-size: 18px;
     transition: 0.3s;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    border: 3px solid #d4af37;
 }
 
 .menu-item img {
+    margin-bottom: 10px;
     width: 100%;
     height: 200px;
     object-fit: cover;
     border-radius: 5px;
+}
+
+/* Hover Effect */
+.menu-item:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
 }
 
 /* Footer */

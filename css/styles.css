@@ -384,6 +384,8 @@ nav ul li a:hover {
     padding: 80px 20px;
     background: #ffffff;
 }
+
+/* Main menu title */
 .main-menu-title {
     text-align: center;
     font-family: 'Playfair Display', serif; 
@@ -401,4 +403,66 @@ nav ul li a:hover {
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
     margin-bottom: 40px;
     transition: all 0.3s ease;
+}
+
+/* Main menu container */
+.main-menu-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 900px;
+    margin: auto;
+    padding: 30px;
+    position: relative;
+    border: 3px solid #d4af37; 
+    border-radius: 50px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+    background-color: #eee;
+}
+
+/** Main menu left and right */
+.main-menu-left,
+.main-menu-right {
+    width: 45%;
+    font-family: 'Georgia', serif;
+    color: #333;
+}
+
+/* Main menu left and right h3 */
+.main-menu-left h3,
+.main-menu-right h3 {
+    font-size: 22px;
+    color: #d4af37;
+    text-transform: uppercase;
+    border-bottom: 2px solid #d4af37;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+/* Main menu left and right ul */
+.main-menu-left ul,
+.main-menu-right ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* Main menu left and right li */
+.main-menu-left li,
+.main-menu-right li {
+    font-size: 18px;
+    padding: 5px 0;
+    transition: color 0.3s ease-in-out;
+}
+
+/* Main Menu Divider*/
+.main-menu-divider {
+    width: 3px;
+    background-color: #d4af37;
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    transform: translateX(-50%);
+    border-radius: 2px;
 }

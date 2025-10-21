@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <link rel="stylesheet" href="css/styles.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Piña Bliss - Tropical Dining Experience</title>
-    </head>    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piña Bliss - Tropical Dining Experience</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+</head>
 <body>
-    <!-- Top header of website -->
+    <!-- Header -->
     <header>
         <div class="header-content">
             <div class="logo-container">
@@ -27,21 +27,39 @@
                 </ul>
             </nav>
         </div>
-    </header>   
-    <!--Hero/Logo Section-->
+    </header>
+
+    <!-- Hero Section -->
     <section class="hero">
         <img src="images/hero.jpg" alt="Piña Bliss Restaurant">
         <div class="hero-text">
             <h1>Piña Bliss</h1>
-            <div class="stars">
-                ★ ★ ★ ★ ★
-            </div>
+            <div class="stars">★ ★ ★ ★ ★</div>
             <p>A Tropical Escape In Every Bite, Where Vibrant Flavors Meet The Perfect Touch Of Paradise.</p>
+            <a href="#menu-preview" style="display:inline-block;margin-top:20px;padding:12px 25px;background:#d4af37;color:white;border-radius:50px;text-decoration:none;font-weight:bold;">View Menu</a>
         </div>
     </section>
-    <!--Menu Section-->
+
+    <!-- Highlight section -->
+   <section class="highlights">
+        <div class="highlight-card">
+            <h3>50+ Tropical Dishes</h3>
+            <p>Freshly prepared daily with vibrant flavors.</p>
+        </div>
+        <div class="highlight-card">
+            <h3>Award-Winning Chef</h3>
+            <p>Creating unforgettable tropical experiences.</p>
+        </div>
+        <div class="highlight-card">
+            <h3>Fresh Ingredients</h3>
+            <p>Locally sourced and handpicked daily.</p>
+        </div>
+    </section>
+
+
+    <!-- Menu Preview Section -->
     <section id="menu-preview" class="menu-preview">
-        <h2 class="menu-title">Signature Dishes:</h2>
+        <h2 class="menu-title">Signature Dishes</h2>
         <div class="menu-items">
             <div class="menu-item">
                 <img src="images/grilled-pineapple-chicken.jpg" alt="Grilled Pineapple Chicken">
@@ -51,71 +69,69 @@
             <div class="menu-item">
                 <img src="images/coconut-shrimp.jpg" alt="Coconut Shrimp">
                 <h3>Coconut Shrimp</h3>
-                <p>Lightly breaded and fried to a golden brown, our coconut shrimp is served with a tangy mango dipping sauce.</p>
+                <p>Lightly breaded and fried to a golden brown, served with a tangy mango dipping sauce.</p>
             </div>
             <div class="menu-item">
                 <img src="images/mango-fire-shrimp.jpg" alt="Mango Fire Shrimp">
                 <h3>Mango Fire Shrimp</h3>
-                <p>Juicy shrimp sautéed in a spicy mango glaze with hints of lime and chili, served over coconut rice.</p>
+                <p>Juicy shrimp sautéed in a spicy mango glaze with hints of lime and chili.</p>
             </div>
             <div class="menu-item">
                 <img src="images/caribbean-breeze-salad.jpg" alt="Caribbean Breeze Salad">
                 <h3>Caribbean Breeze Salad</h3>
-                <p>A fresh mix of baby greens, mango, avocado, toasted coconut, and citrus-marinated shrimp, finished with passion fruit dressing.</p>
-            </div>
-            <div class="menu-item">
-                <img src="images/tropical-surf-turf-skewers.jpg" alt="Tropical Surf and Turf Skewers">
-                <h3>Tropical Surf & Turf Skewers</h3>
-                <p>Grilled beef and shrimp skewers with a tangy papaya-habanero sauce, served with coconut-lime quinoa.</p>
+                <p>Fresh mix of greens, mango, avocado, toasted coconut, and citrus-marinated shrimp.</p>
             </div>
         </div>
-    </section>    
-    <!--Reservation Section-->
-<section id="reservation" class="reservation">
-    <h2 class="reservation-title">Make a Reservation</h2>
-    <p class="reservation-text">Reserve your table for a tropical dining experience.</p>
-    <form class="reservation-form">
-        <div class="form-group">
-            <label for="name">Name</label>
-            <input type="text" id="name" placeholder="Enter your full name" required>
-        </div>
-        <div class="form-group">
-            <label for="email">Email</label>
-            <input type="email" id="email" placeholder="Enter your email" required>
-        </div>
-        <div class="form-group">
-            <label for="date">Date</label>
-            <input type="date" id="date" required>
-        </div>
-        <div class="form-group">
-            <label for="time">Time</label>
-            <input type="time" id="time" required>
-        </div>
-        <div class="form-group">
-            <label for="guests">Guests</label>
-            <input type="number" id="guests" min="1" max="20" placeholder="Number of guests" required>
-        </div>
-        <button type="submit" class="reserve-btn">Book Now</button>
-    </form>
-</section>
-    <!--Bottom/Footer/contact Section-->
-<div class="footer-basic" id="contact">
-    <footer>
-        <div class="social">
-            <a href="#"><i class="icon ion-social-instagram"></i></a>
-            <a href="#"><i class="icon ion-social-snapchat"></i></a>
-            <a href="#"><i class="icon ion-social-twitter"></i></a>
-            <a href="#"><i class="icon ion-social-facebook"></i></a>
-        </div>
-        <ul class="list-inline">
-            <li class="list-inline-item"><a href="index.html">Home</a></li>
-            <li class="list-inline-item"><a href="menu.html">Menu</a></li>
-            <li class="list-inline-item"><a href="#">About</a></li>
-            <li class="list-inline-item"><a href="#reservation">Reservation</a></li>
-            <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
-        </ul>
-        <p class="copyright">Piña Bliss © 2025</p>
-    </footer>
-</div>
+        <a href="menu.html" style="display:inline-block;margin-top:30px;padding:12px 25px;background:#d4af37;color:white;border-radius:50px;text-decoration:none;font-weight:bold;">See Full Menu</a>
+    </section>
+
+    <!-- Reservation Section -->
+    <section id="reservation" class="reservation">
+        <h2 class="reservation__title">Make a Reservation</h2>
+        <p class="reservation__subtitle">Reserve your table for a tropical dining experience.</p>
+        <form class="reservation__form">
+            <div class="reservation__group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+            </div>
+            <div class="reservation__group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+            <div class="reservation__group">
+                <label for="date">Date</label>
+                <input type="date" id="date" name="date" required>
+            </div>
+            <div class="reservation__group">
+                <label for="time">Time</label>
+                <input type="time" id="time" name="time" required>
+            </div>
+            <div class="reservation__group">
+                <label for="guests">Guests</label>
+                <input type="number" id="guests" name="guests" min="1" max="20" placeholder="Number of guests" required>
+            </div>
+            <button type="submit" class="reservation__button">Book Now</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <div class="footer-basic" id="contact">
+        <footer>
+            <div class="social">
+                <a href="#"><i class="icon ion-social-instagram"></i></a>
+                <a href="#"><i class="icon ion-social-snapchat"></i></a>
+                <a href="#"><i class="icon ion-social-twitter"></i></a>
+                <a href="#"><i class="icon ion-social-facebook"></i></a>
+            </div>
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="index.html">Home</a></li>
+                <li class="list-inline-item"><a href="menu.html">Menu</a></li>
+                <li class="list-inline-item"><a href="about.html">About</a></li>
+                <li class="list-inline-item"><a href="#reservation">Reservation</a></li>
+                <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+            </ul>
+            <p class="copyright">Piña Bliss © 2025</p>
+        </footer>
+    </div>
 </body>
 </html>

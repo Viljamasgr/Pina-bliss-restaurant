@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
   --gold: #d4af37;
   --gold-dark: #b28f2e;
@@ -12,6 +16,7 @@
 /* ================================
    RESET & BASE STYLES
 ================================ */
+
 * {
   margin: 0;
   padding: 0;
@@ -27,6 +32,7 @@ body {
 /* ================================
    HEADER
 ================================ */
+
 header {
   background-color: #222;
   padding: 10px;
@@ -70,17 +76,30 @@ nav ul li a {
 
 nav ul li a:hover {
   text-decoration: underline;
+  color: white;
 }
 
 /* ================================
    HERO SECTION
 ================================ */
+
 .hero {
   position: relative;
   text-align: center;
   height: 400px;
   overflow: hidden;
   margin-bottom: 10px;
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.5) 100%);
+  pointer-events: none;
 }
 
 .hero img {
@@ -94,16 +113,14 @@ nav ul li a:hover {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.6);
   color: white;
-  padding: 30px 40px;
+  border: 3px solid var(--gold);
   border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+  padding: 25px 35px;
   max-width: 80%;
-  transition: background 0.3s ease;
-}
-
-.hero-text:hover {
-  background: rgba(0, 0, 0, 0.7);
+  text-align: center;
 }
 
 .hero h1 {
@@ -136,6 +153,7 @@ nav ul li a:hover {
 /* ================================
    FEATURED HIGHLIGHTS
 ================================ */
+
 .highlights {
   display: flex;
   justify-content: center;
@@ -175,6 +193,7 @@ nav ul li a:hover {
 /* ================================
    SIGNATURE DISHES / MENU PREVIEW
 ================================ */
+
 .menu-preview {
   text-align: center;
   padding: 80px 20px 20px;
@@ -229,6 +248,7 @@ nav ul li a:hover {
 /* ================================
    RESERVATION FORM
 ================================ */
+
 .reservation {
   max-width: 700px;
   margin: 60px auto;
@@ -300,6 +320,7 @@ nav ul li a:hover {
 /* ================================
    FOOTER
 ================================ */
+
 .footer-basic {
   padding: 40px 0;
   background-color: #222;
@@ -378,7 +399,7 @@ nav ul li a:hover {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.6);
   color: white;
   border: 3px solid var(--gold);
   border-radius: 12px;
@@ -661,6 +682,7 @@ nav ul li a:hover {
 /* =============================
    RESPONSIVE: stack columns & hide divider
    ============================= */
+
 @media (max-width: 880px) {
   .main-menu-container {
     flex-direction: column;
